@@ -1,0 +1,142 @@
+
+body {
+    padding: 50px;
+    font-family: 'Roboto', sans-serif; 
+    background: #2C2C2C; 
+    color: #E0E0E0; 
+    box-sizing: border-box;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 50px;
+    background: #3A3A3A; 
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8); 
+    border-radius: 15px;
+    border: 2px solid #8E44AD; 
+    transform: scale(1);
+    transition: all 0.3s ease-in-out; 
+}
+
+.container:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 12px 50px rgba(0, 0, 0, 0.9);
+}
+
+
+h2 {
+    font-size: 32px;
+    color: #9B59B6; 
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700; 
+    text-transform: uppercase; 
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    color: #E0E0E0; 
+    border-radius: 10px;
+    border: 1px solid #8E44AD; 
+    background-color: #3A3A3A; 
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #9B59B6; 
+    background-color: #2C2C2C; 
+    box-shadow: 0 0 10px rgba(155, 89, 182, 0.6); 
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+    color: white;
+    background-color: #9B59B6; 
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase; 
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+}
+
+
+button:hover {
+    background-color: #8E44AD; 
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); 
+}
+
+button:focus {
+    outline: none;
+}
+
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+textarea:hover {
+    background-color: #2C2C2C; 
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 15px rgba(155, 89, 182, 0.7); 
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #9B59B6; 
+    border-radius: 4px;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #BDC3C7; 
+    font-size: 14px;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: fadeIn 1s ease-out;
+}
